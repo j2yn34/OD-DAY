@@ -1,755 +1,819 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="/images/main/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>오디데이</title>
 
     <!-- 폰트어썸 -->
-    <script src="https://kit.fontawesome.com/5ed0f1f7e5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5ed0f1f7e5.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
 
     <!-- 메뉴넘김 -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <!-- js -->
     <script src="javascript/jquery-1.12.3.js"></script>
     <script src="javascript/script.js"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <div id="wrap">
-        <!-- 스크롤 위치 확인 -->
-        <!-- <div id="container">
+      <!-- 스크롤 위치 확인 -->
+      <!-- <div id="container">
             <div id="log">0</div>
         </div> -->
-        <!-- 헤더 -->
-        <header>
-            <div class="top">
-                <div class="inner">
-                    <!-- 헤더 로고 -->
-                    <div class="h_logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="로고">
-                        </a>
-                    </div>
-                    <!-- 네비게이션 -->
-                    <nav class="pc_nav">
-                        <ul class="navi clearfix">
-                            <li class="menu">
-                                <a href="#">BRAND</a>
-                                <ul class="submenu">
-                                    <li><a href="#">브랜드 스토리</a></li>
-                                    <li><a href="#">오더 서비스</a></li>
-                                    <li><a href="#">아이덴티티</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu">
-                                <a href="#">MENU</a>
-                                <ul class="submenu">
-                                    <li><a href="#">케이크</a></li>
-                                    <li><a href="#">타르트</a></li>
-                                    <li><a href="#">디저트</a></li>
-                                    <li><a href="#">음료</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu">
-                                <a href="#">STORE</a>
-                                <ul class="submenu">
-                                    <li><a href="#">매장 찾기</a></li>
-                                    <li><a href="#">가맹점 개설</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu">
-                                <a href="#">ORDER</a>
-                                <ul class="submenu">
-                                    <li><a href="#">정기배송 주문</a></li>
-                                    <li><a href="#">픽업 예약</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu">
-                                <a href="#">COMMUNITY</a>
-                                <ul class="submenu">
-                                    <li><a href="#">NEWS</a></li>
-                                    <li><a href="#">EVENT</a></li>
-                                    <li><a href="#">자주 하는 질문</a></li>
-                                    <li><a href="#">고객센터</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- 로그인 네비 -->
-                    <div class="nav-log">
-                        <ul>
-                            <li><a href="#">LOGIN</a></li>
-                            <span class="vertical"></span>
-                            <li><a href="#">JOIN</a></li>
-                            <ul>
-                    </div>
-                    <!-- 헤더 아이콘 -->
-                    <div class="header_icon">
-                        <div>
-                            <button class="search_icon">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </div>
-                        <!-- <a href="javascript:void(0);">
-                            <i class="fa-solid fa-user"></i>
-                        </a> -->
-                        <a href="javascript:void(0);">
-                            <ion-icon name="menu-outline" class="fa-solid fa-bars"></ion-icon>
-                        </a>
-                    </div>
-                </div>
+      <!-- 헤더 -->
+      <header>
+        <div class="top">
+          <div class="inner">
+            <!-- 헤더 로고 -->
+            <div class="h_logo">
+              <a href="#">
+                <img src="images/main/logo.png" alt="로고" />
+              </a>
             </div>
-        </header>
-        <!-- 검색창 모달 -->
-        <div class="modal">
-            <div class="search_modal">
-                <button class="close">
-                    <i class="fa-solid fa-xmark"></i>
+            <!-- 네비게이션 -->
+            <nav class="pc_nav">
+              <ul class="navi clearfix">
+                <li class="menu">
+                  <a href="#">BRAND</a>
+                  <ul class="submenu">
+                    <li><a href="#">브랜드 스토리</a></li>
+                    <li><a href="#">오더 서비스</a></li>
+                    <li><a href="#">아이덴티티</a></li>
+                  </ul>
+                </li>
+                <li class="menu">
+                  <a href="#">MENU</a>
+                  <ul class="submenu">
+                    <li><a href="#">케이크</a></li>
+                    <li><a href="#">타르트</a></li>
+                    <li><a href="#">디저트</a></li>
+                    <li><a href="#">음료</a></li>
+                  </ul>
+                </li>
+                <li class="menu">
+                  <a href="#">STORE</a>
+                  <ul class="submenu">
+                    <li><a href="#">매장 찾기</a></li>
+                    <li><a href="#">가맹점 개설</a></li>
+                  </ul>
+                </li>
+                <li class="menu">
+                  <a href="#">ORDER</a>
+                  <ul class="submenu">
+                    <li><a href="#">정기배송 주문</a></li>
+                    <li><a href="#">픽업 예약</a></li>
+                  </ul>
+                </li>
+                <li class="menu">
+                  <a href="#">COMMUNITY</a>
+                  <ul class="submenu">
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">자주 하는 질문</a></li>
+                    <li><a href="#">고객센터</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <!-- 로그인 네비 -->
+            <div class="nav-log">
+              <ul>
+                <li><a href="#">LOGIN</a></li>
+                <span class="vertical"></span>
+                <li><a href="#">JOIN</a></li>
+              </ul>
+            </div>
+            <!-- 헤더 아이콘 -->
+            <div class="header_icon">
+              <div>
+                <button class="search_icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <input class="input_sr" placeholder="메뉴명을 입력해주세요." type="text">
-                <button class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <div class="keyword"><b>#초코 #딸기 #무화과</b></div>
+              </div>
+              <!-- <a href="javascript:void(0);">
+                                <i class="fa-solid fa-user"></i>
+                            </a> -->
+              <a href="javascript:void(0);">
+                <ion-icon
+                  name="menu-outline"
+                  class="fa-solid fa-bars"
+                ></ion-icon>
+              </a>
             </div>
+          </div>
         </div>
-        <!-- S : mobile navigation -->
-        <div class="mobile_container">
-            <div class="mobile_bg"></div>
-            <aside class="mobile_aside">
-                <div class="mobile_head">
-                    <button class="mobile_close" type="button">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                    <div class="mobile_logo">
-                        <img src="images/logo.png" alt="로고">
-                    </div>
-                    <div class="m_button">
-                        <div class="m_btn">
-                           <a href="javascript:void(0);">LOGIN / JOIN</a> 
-                        </div>
-                        <div class="m_btn">
-                            <a href="javascript:void(0);"> MYPAGE</a>
-                        </div>
-                    </div>
-                    <div class="m_search">
-                        <input class="m_input_sr" placeholder="메뉴명을 입력해주세요." type="text">
-                        <button class="m_search_btn">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                </div>
-                <nav>
-                    <ul class="mobile_nav">
-                        <li class="m_menu">
-                            <a href="#" class="gnb">
-                                <b>BRAND</b>
-                                <span class="m_arrow"></span>
-                            </a>
-                            <ul class="m_submenu">
-                                <li><a href="#">브랜드 스토리</a></li>
-                                <li><a href="#">오더 서비스</a></li>
-                                <li><a href="#">아이덴티티</a></li>
-                            </ul>
-                        </li>
-                        <li class="m_menu">
-                            <a href="#" class="gnb">
-                                <b>MENU</b>
-                                <span class="m_arrow"></span>
-                            </a>
-                            <ul class="m_submenu">
-                                <li><a href="#">케이크</a></li>
-                                <li><a href="#">타르트</a></li>
-                                <li><a href="#">디저트</a></li>
-                                <li><a href="#">음료</a></li>
-                            </ul>
-                        </li>
-                        <li class="m_menu">
-                            <a href="#" class="gnb">
-                                <b>STORE</b>
-                                <span class="m_arrow"></span>
-                            </a>
-                            <ul class="m_submenu">
-                                <li><a href="#">매장 찾기</a></li>
-                                <li><a href="#">가맹점 개설</a></li>
-                            </ul>
-                        </li>
-                        <li class="m_menu">
-                            <a href="#" class="gnb">
-                                <b>ORDER</b>
-                                <span class="m_arrow"></span>
-                            </a>
-                            <ul class="m_submenu">
-                                <li><a href="#">정기배송 주문</a></li>
-                                <li><a href="#">픽업 예약</a></li>
-                            </ul>
-                        </li>
-                        <li class="m_menu">
-                            <a href="#" class="gnb">
-                                <b>COMMUNITY</b>
-                                <span class="m_arrow"></span>
-                            </a>
-                            <ul class="m_submenu">
-                                <li><a href="#">NEWS</a></li>
-                                <li><a href="#">EVENT</a></li>
-                                <li><a href="#">자주 하는 질문</a></li>
-                                <li><a href="#">고객센터</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
+      </header>
+      <!-- 검색창 모달 -->
+      <div class="modal">
+        <div class="search_modal">
+          <button class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <input
+            class="input_sr"
+            placeholder="메뉴명을 입력해주세요."
+            type="text"
+          />
+          <button class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div class="keyword"><b>#초코 #딸기 #무화과</b></div>
         </div>
-        <!-- E : mobile navigation -->
-        <!-- 메인배너 Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide banner1">
-                    <div class="banner1-txt">
-                        <h1>OH!D-DAY</h1>
-                        <p><i>Premium Dessert Cafe</i></p>
-                    </div>
-                </div>
-
-
-                <div class="swiper-slide banner2">
-                    <div class="banner-txt banner2-txt">
-                        <small class="new">NEW</small>
-                        <h1>무화과 디저트 5종 출시</h1>
-                        <p>
-                            얼그레이/크림치즈/레드벨벳<br>
-                            시즌 한정 무화과 디저트를 만나보세요.
-                        </p>
-                        <a href="#" type="button" class="button">
-                            MORE
-                        </a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide banner3">
-                    <div class="banner-txt banner3-txt">
-                        <small class="best">BEST</small>
-                        <h1>만년설 딸기 디저트</h1>
-                        <p>
-                            오디데이 시그니처 인기메뉴!<br>
-                            당도 높은 만년설 딸기를 디저트로 즐겨보세요.
-                        </p>
-                        <a href="#" type="button" class="button">
-                            MORE
-                        </a>
-                    </div>
-                </div>
+      </div>
+      <!-- S : mobile navigation -->
+      <div class="mobile_container">
+        <div class="mobile_bg"></div>
+        <aside class="mobile_aside">
+          <div class="mobile_head">
+            <button class="mobile_close" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mobile_logo">
+              <img src="images/main/logo.png" alt="로고" />
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="m_button">
+              <div class="m_btn">
+                <a href="javascript:void(0);">LOGIN / JOIN</a>
+              </div>
+              <div class="m_btn">
+                <a href="javascript:void(0);"> MYPAGE</a>
+              </div>
+            </div>
+            <div class="m_search">
+              <input
+                class="m_input_sr"
+                placeholder="메뉴명을 입력해주세요."
+                type="text"
+              />
+              <button class="m_search_btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+          <nav>
+            <ul class="mobile_nav">
+              <li class="m_menu">
+                <a href="#" class="gnb">
+                  <b>BRAND</b>
+                  <span class="m_arrow"></span>
+                </a>
+                <ul class="m_submenu">
+                  <li><a href="#">브랜드 스토리</a></li>
+                  <li><a href="#">오더 서비스</a></li>
+                  <li><a href="#">아이덴티티</a></li>
+                </ul>
+              </li>
+              <li class="m_menu">
+                <a href="#" class="gnb">
+                  <b>MENU</b>
+                  <span class="m_arrow"></span>
+                </a>
+                <ul class="m_submenu">
+                  <li><a href="#">케이크</a></li>
+                  <li><a href="#">타르트</a></li>
+                  <li><a href="#">디저트</a></li>
+                  <li><a href="#">음료</a></li>
+                </ul>
+              </li>
+              <li class="m_menu">
+                <a href="#" class="gnb">
+                  <b>STORE</b>
+                  <span class="m_arrow"></span>
+                </a>
+                <ul class="m_submenu">
+                  <li><a href="#">매장 찾기</a></li>
+                  <li><a href="#">가맹점 개설</a></li>
+                </ul>
+              </li>
+              <li class="m_menu">
+                <a href="#" class="gnb">
+                  <b>ORDER</b>
+                  <span class="m_arrow"></span>
+                </a>
+                <ul class="m_submenu">
+                  <li><a href="#">정기배송 주문</a></li>
+                  <li><a href="#">픽업 예약</a></li>
+                </ul>
+              </li>
+              <li class="m_menu">
+                <a href="#" class="gnb">
+                  <b>COMMUNITY</b>
+                  <span class="m_arrow"></span>
+                </a>
+                <ul class="m_submenu">
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">EVENT</a></li>
+                  <li><a href="#">자주 하는 질문</a></li>
+                  <li><a href="#">고객센터</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+      <!-- E : mobile navigation -->
+      <!-- 메인배너 Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide banner1">
+            <div class="banner1-txt">
+              <h1>OH!D-DAY</h1>
+              <p><i>Premium Dessert Cafe</i></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide banner2">
+            <div class="banner-txt banner2-txt">
+              <small class="new">NEW</small>
+              <h1>무화과 디저트 5종 출시</h1>
+              <p>
+                얼그레이/크림치즈/레드벨벳<br />
+                시즌 한정 무화과 디저트를 만나보세요.
+              </p>
+              <a href="#" type="button" class="button"> MORE </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide banner3">
+            <div class="banner-txt banner3-txt">
+              <small class="best">BEST</small>
+              <h1>만년설 딸기 디저트</h1>
+              <p>
+                오디데이 시그니처 인기메뉴!<br />
+                당도 높은 만년설 딸기를 디저트로 즐겨보세요.
+              </p>
+              <a href="#" type="button" class="button"> MORE </a>
+            </div>
+          </div>
         </div>
-        <!-- 메인1  베스트 메뉴 -->
-        <section id="best_menu">
-            <article>
-                <h1>BEST CAKE</h1>
-                <div class="responsive">
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/cake1.png" alt="케이크1">
-                            </a>
-                        </div>
-                        <p>체리생크림 케이크</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/cake2.png" alt="케이크2">
-                            </a>
-                        </div>
-                        <p>딸기요거트 케이크</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/cake3.png" alt="케이크3">
-                            </a>
-                        </div>
-                        <p>순수우유딸기 케이크</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/cake4.png" alt="케이크4">
-                            </a>
-                        </div>
-                        <p>카카오앤딸기 케이크</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/cake5.png" alt="케이크5">
-                            </a>
-                        </div>
-                        <p>체리포레누아 케이크</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/cake6.png" alt="케이크6">
-                            </a>
-                        </div>
-                        <p>딸기초코청크 케이크</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/cake7.png" alt="케이크7">
-                            </a>
-                        </div>
-                        <p>딸기듬뿍초코 케이크</p>
-                    </div>
-                    <div>
-                        <a href="javascript:void(0);" class="more">
-                            <img class="btn" src="images/best_more.png" alt="케이크1">
-                            <img class="btn_hover" src="images/best_more_hover.png" alt="케이크1">
-                            <p>
-                                BEST CAKE<br>
-                                <b>더보기</b>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <h1>BEST TART</h1>
-                <div class="responsive">
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/tart1.png" alt="타르트1">
-                            </a>
-                        </div>
-                        <p>샤인머스캣 타르트</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/tart2.png" alt="타르트2">
-                            </a>
-                        </div>
-                        <p>무화과가득 타르트</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/tart3.png" alt="타르트3">
-                            </a>
-                        </div>
-                        <p>딸기레어치즈 타르트</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/tart4.png" alt="타르트4">
-                            </a>
-                        </div>
-                        <p>자몽 타르트</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/tart5.png" alt="타르트5">
-                            </a>
-                        </div>
-                        <p>코코넛망고 타르트</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/tart6.png" alt="타르트6">
-                            </a>
-                        </div>
-                        <p>라즈베리머랭 타르트</p>
-                    </div>
-                    <div>
-                        <div class="best_img">
-                            <a href="javascript:void(0);">
-                                <img src="images/tart7.png" alt="타르트7">
-                            </a>
-                        </div>
-                        <p>마스카포네쇼콜라 타르트</p>
-                    </div>
-                    <div>
-                        <a href="javascript:void(0);" class="more">
-                            <img class="btn" src="images/best_more.png" alt="베스트타르트 더보기">
-                            <img class="btn_hover" src="images/best_more_hover.png" alt="베스트타르트 더보기">
-                            <p>
-                                BEST TART<br>
-                                <b>더보기</b>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <!-- 메인2 ORDER -->
-        <section id="order">
-            <div class="inner">
-                <h1>ORDER</h1>
-                <article class="delivery">
-                    <div class="order_txt delivery_txt">
-                        <div>
-                            <p class="txt1 delivery_txt1">
-                                <span class="light_txt">원하는 날마다 우리집 앞까지</span><br>
-                                <b><span class="bold">케이크/타르트</span></b><br>
-                                <b><span class="pink_txt">정기배송</span></b>
-                            </p>
-                            <p class="txt2 delivery_txt2">
-                                한 번의 주문으로 편하게,<br>
-                                추가할인 혜택까지!
-                            </p>
-                        </div>
-                        <div class="btn delivery_btn">
-                            <a href="https://pariscroissantorder.com/" type="button" class="button">
-                                바로가기
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/delivery_img.png" alt="픽업이미지" class="order_img delivery_img">
-                    </div>
-                </article>
-                <div class="line"></div>
-                <article class="pick">
-                    <div>
-                        <img src="images/pick_img.png" alt="픽업이미지" class="order_img pick_img">
-                    </div>
-                    <div class="order_txt pick_txt">
-                        <div>
-                            <p class="txt1 pick_txt1">
-                                <span class="light_txt">원하는 매장에서 원하는 시간에</span><br>
-                                <b><span class="bold">케이크/타르트</span></b><br>
-                                <b><span class="pink_txt">픽업 예약</span></b>
-                            </p>
-                            <p class="txt2 pick_txt2">
-                                조각별 최대 6가지 원하는 맛으로,<br>
-                                내 취향 맞춤 디저트
-                            </p>
-                        </div>
-                        <div class="btn pick_btn">
-                            <a href="https://pariscroissantorder.com/" type="button" class="button">
-                                바로가기
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- 메인3 store -->
-        <section id="store">
-            <div class="inner">
-                <a href="javascript:void(0);" class="box box_store">
-                    <div class="st_txt">
-                        <span class="st_title">매장 찾기</span>
-                        <p>가까운 오디데이 매장을 찾아보세요.</p>
-                    </div>
-                    <img src="images/store_icon.png" alt="매장찾기" class="store_icon">
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- 메인1  베스트 메뉴 -->
+      <section id="best_menu">
+        <article>
+          <h1>BEST CAKE</h1>
+          <div class="responsive">
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/cake1.png" alt="케이크1" />
                 </a>
-                <a href="javascript:void(0);" class="box box_fran">
-                    <div class="st_txt">
-                        <span class="st_title">가맹점 개설</span>
-                        <p>오디데이와 함께 성공적인 창업 준비!</p>
-                    </div>
-                    <img src="images/fran_icon.png" alt="가맹점개설" class="store_icon">
-                </a>
+              </div>
+              <p>체리생크림 케이크</p>
             </div>
-        </section>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/cake2.png" alt="케이크2" />
+                </a>
+              </div>
+              <p>딸기요거트 케이크</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/cake3.png" alt="케이크3" />
+                </a>
+              </div>
+              <p>순수우유딸기 케이크</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/cake4.png" alt="케이크4" />
+                </a>
+              </div>
+              <p>카카오앤딸기 케이크</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/cake5.png" alt="케이크5" />
+                </a>
+              </div>
+              <p>체리포레누아 케이크</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/cake6.png" alt="케이크6" />
+                </a>
+              </div>
+              <p>딸기초코청크 케이크</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/cake7.png" alt="케이크7" />
+                </a>
+              </div>
+              <p>딸기듬뿍초코 케이크</p>
+            </div>
+            <div>
+              <a href="javascript:void(0);" class="more">
+                <img
+                  class="btn"
+                  src="images/main/best_more.png"
+                  alt="케이크1"
+                />
+                <img
+                  class="btn_hover"
+                  src="images/main/best_more_hover.png"
+                  alt="케이크1"
+                />
+                <p>
+                  BEST CAKE<br />
+                  <b>더보기</b>
+                </p>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h1>BEST TART</h1>
+          <div class="responsive">
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/tart1.png" alt="타르트1" />
+                </a>
+              </div>
+              <p>샤인머스캣 타르트</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/tart2.png" alt="타르트2" />
+                </a>
+              </div>
+              <p>무화과가득 타르트</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/tart3.png" alt="타르트3" />
+                </a>
+              </div>
+              <p>딸기레어치즈 타르트</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/tart4.png" alt="타르트4" />
+                </a>
+              </div>
+              <p>자몽 타르트</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/tart5.png" alt="타르트5" />
+                </a>
+              </div>
+              <p>코코넛망고 타르트</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/tart6.png" alt="타르트6" />
+                </a>
+              </div>
+              <p>라즈베리머랭 타르트</p>
+            </div>
+            <div>
+              <div class="best_img">
+                <a href="javascript:void(0);">
+                  <img src="images/main/tart7.png" alt="타르트7" />
+                </a>
+              </div>
+              <p>마스카포네쇼콜라 타르트</p>
+            </div>
+            <div>
+              <a href="javascript:void(0);" class="more">
+                <img
+                  class="btn"
+                  src="images/main/best_more.png"
+                  alt="베스트타르트 더보기"
+                />
+                <img
+                  class="btn_hover"
+                  src="images/main/best_more_hover.png"
+                  alt="베스트타르트 더보기"
+                />
+                <p>
+                  BEST TART<br />
+                  <b>더보기</b>
+                </p>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- 메인2 ORDER -->
+      <section id="order">
+        <div class="inner">
+          <h1>ORDER</h1>
+          <article class="delivery">
+            <div class="order_txt delivery_txt">
+              <div>
+                <p class="txt1 delivery_txt1">
+                  <span class="light_txt">원하는 날마다 우리집 앞까지</span
+                  ><br />
+                  <b><span class="bold">케이크/타르트</span></b
+                  ><br />
+                  <b><span class="pink_txt">정기배송</span></b>
+                </p>
+                <p class="txt2 delivery_txt2">
+                  한 번의 주문으로 편하게,<br />
+                  추가할인 혜택까지!
+                </p>
+              </div>
+              <div class="btn delivery_btn">
+                <a
+                  href="https://pariscroissantorder.com/"
+                  type="button"
+                  class="button"
+                >
+                  바로가기
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/main/delivery_img.png"
+                alt="픽업이미지"
+                class="order_img delivery_img"
+              />
+            </div>
+          </article>
+          <div class="line"></div>
+          <article class="pick">
+            <div>
+              <img
+                src="images/main/pick_img.png"
+                alt="픽업이미지"
+                class="order_img pick_img"
+              />
+            </div>
+            <div class="order_txt pick_txt">
+              <div>
+                <p class="txt1 pick_txt1">
+                  <span class="light_txt">원하는 매장에서 원하는 시간에</span
+                  ><br />
+                  <b><span class="bold">케이크/타르트</span></b
+                  ><br />
+                  <b><span class="pink_txt">픽업 예약</span></b>
+                </p>
+                <p class="txt2 pick_txt2">
+                  조각별 최대 6가지 원하는 맛으로,<br />
+                  내 취향 맞춤 디저트
+                </p>
+              </div>
+              <div class="btn pick_btn">
+                <a
+                  href="https://pariscroissantorder.com/"
+                  type="button"
+                  class="button"
+                >
+                  바로가기
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 메인3 store -->
+      <section id="store">
+        <div class="inner">
+          <a href="javascript:void(0);" class="box box_store">
+            <div class="st_txt">
+              <span class="st_title">매장 찾기</span>
+              <p>가까운 오디데이 매장을 찾아보세요.</p>
+            </div>
+            <img
+              src="images/main/store_icon.png"
+              alt="매장찾기"
+              class="store_icon"
+            />
+          </a>
+          <a href="javascript:void(0);" class="box box_fran">
+            <div class="st_txt">
+              <span class="st_title">가맹점 개설</span>
+              <p>오디데이와 함께 성공적인 창업 준비!</p>
+            </div>
+            <img
+              src="images/main/fran_icon.png"
+              alt="가맹점개설"
+              class="store_icon"
+            />
+          </a>
+        </div>
+      </section>
 
-        <!-- 메인4 EVENT -->
-        <section id="event">
-            <div class="inner ev_inner">
-                <div class="title_pc">
-                    <h1>
-                        EVENT<br>
-                        &<br>
-                        NEWS
-                    </h1>
-                    <a href="javascript:void(0);" type="button" class="button">
-                        MORE
-                    </a>
-                </div>
-                <div class="title_m">
-                    <h1>
-                        EVENT & NEWS
-                    </h1>
-                </div>
-                <div class="ev_conts">
-                    <div class="autoplay ev_ul">
-                        <div class="ev_li">
-                            <a href="javascript:void(0);" class="ev_box">
-                                <div class="ev_imgs">
-                                    <div class="ev_img ev_img1"></div>
-                                </div>
-                                <div class="ev_txt">
-                                    <h3>
-                                        정기배송 주문 시, 최대 30% 할인 혜택
-                                    </h3>
-                                    <p>상시 진행</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="ev_li">
-                            <a href="javascript:void(0);" class="ev_box">
-                                <div class="ev_imgs">
-                                    <div class="ev_img ev_img2"></div>
-                                </div>
-                                <div class="ev_txt">
-                                    <h3>
-                                        오디데이 인스타그램 팔로우 이벤트
-                                    </h3>
-                                    <p>2023.01.01 ~ 2023.01.31</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="ev_li">
-                            <a href="javascript:void(0);" class="ev_box">
-                                <div class="ev_imgs">
-                                    <div class="ev_img ev_img3"></div>
-                                </div>
-                                <div class="ev_txt">
-                                    <h3>
-                                        홀케이크/타르트 픽업 예약 시, 한정수량 파티 패...
-                                    </h3>
-                                    <p>2023.01.01 ~ 소진 시까지</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="ev_li">
-                            <a href="javascript:void(0);" class="ev_box">
-                                <div class="ev_imgs">
-                                    <div class="ev_img ev_img4"></div>
-                                </div>
-                                <div class="ev_txt">
-                                    <h3>
-                                        [신메뉴] 얼그레이무화과 케이크/타르트 출시
-                                    </h3>
-                                    <p>2023.01.18</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <a href="javascript:void(0);" type="button" class="m_ev_button">
-                    MORE
+      <!-- 메인4 EVENT -->
+      <section id="event">
+        <div class="inner ev_inner">
+          <div class="title_pc">
+            <h1>
+              EVENT<br />
+              &<br />
+              NEWS
+            </h1>
+            <a href="javascript:void(0);" type="button" class="button">
+              MORE
+            </a>
+          </div>
+          <div class="title_m">
+            <h1>EVENT & NEWS</h1>
+          </div>
+          <div class="ev_conts">
+            <div class="autoplay ev_ul">
+              <div class="ev_li">
+                <a href="javascript:void(0);" class="ev_box">
+                  <div class="ev_imgs">
+                    <div class="ev_img ev_img1"></div>
+                  </div>
+                  <div class="ev_txt">
+                    <h3>정기배송 주문 시, 최대 30% 할인 혜택</h3>
+                    <p>상시 진행</p>
+                  </div>
                 </a>
+              </div>
+              <div class="ev_li">
+                <a href="javascript:void(0);" class="ev_box">
+                  <div class="ev_imgs">
+                    <div class="ev_img ev_img2"></div>
+                  </div>
+                  <div class="ev_txt">
+                    <h3>오디데이 인스타그램 팔로우 이벤트</h3>
+                    <p>2023.01.01 ~ 2023.01.31</p>
+                  </div>
+                </a>
+              </div>
+              <div class="ev_li">
+                <a href="javascript:void(0);" class="ev_box">
+                  <div class="ev_imgs">
+                    <div class="ev_img ev_img3"></div>
+                  </div>
+                  <div class="ev_txt">
+                    <h3>홀케이크/타르트 픽업 예약 시, 한정수량 파티 패...</h3>
+                    <p>2023.01.01 ~ 소진 시까지</p>
+                  </div>
+                </a>
+              </div>
+              <div class="ev_li">
+                <a href="javascript:void(0);" class="ev_box">
+                  <div class="ev_imgs">
+                    <div class="ev_img ev_img4"></div>
+                  </div>
+                  <div class="ev_txt">
+                    <h3>[신메뉴] 얼그레이무화과 케이크/타르트 출시</h3>
+                    <p>2023.01.18</p>
+                  </div>
+                </a>
+              </div>
             </div>
-        </section>
-        <!-- 메인5 INSTA -->
-        <section id="insta">
-            <div class="inner">
-                <h1>INSTAGRAM</h1>
-                <ul class="box-flow">
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/" target="_blank">
-                            <img src="images/insta1.png" alt="배너 1">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/;" target="_blank">
-                            <img src="images/insta2.png" alt="배너 2">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/" target="_blank">
-                            <img src="images/insta3.png" alt="배너 3">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/" target="_blank">
-                            <img src="images/insta4.png" alt="배너 4">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/" target="_blank">
-                            <img src="images/insta5.png" alt="배너 5">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/" target="_blank">
-                            <img src="images/insta6.png" alt="배너 6">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/" target="_blank">
-                            <img src="images/insta7.png" alt="배너 7">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" target="_blank">
-                            <img src="images/insta8.png" alt="배너 8">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/" target="_blank">
-                            <img src="images/insta9.png" alt="배너 8">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pariscroissant_kr/" target="_blank">
-                            <img src="images/insta10.png" alt="배너 8">
-                            <div class="insta_info">
-                                <p class="insta_id">@OH_D_DAY</p>
-                                <div class="button">
-                                    FOLLOW >
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- 푸터 -->
-        <footer>
-            <div class="inner">
-                <div class="info">
-                    <a href="javascript:void(0);" class="f_logo clearfix">
-                        <img src="images/logo.png" alt="로고">
-                    </a>
-                    <p class="f_txt">
-                        고객센터: 1600-1234 &nbsp;&nbsp;&nbsp; 주소: 서울특별시 강남구 강남대로 396<br>
-                        대표이사: 박지연 &nbsp;&nbsp;&nbsp; 사업자등록번호: 107-86-12345<br>
-                        COPYRIGHTⓒ 2023 OHDDAY. ALL RIGHTS RESERVED
-                    </p>
-                    <ul class="f_link">
-                        <li><a href="javascript:void(0);">개인정보처리방침</a></li>
-                        <li><a href="javascript:void(0);">서비스이용약관</a></li>
-                    </ul>
+          </div>
+
+          <a href="javascript:void(0);" type="button" class="m_ev_button">
+            MORE
+          </a>
+        </div>
+      </section>
+      <!-- 메인5 INSTA -->
+      <section id="insta">
+        <div class="inner">
+          <h1>INSTAGRAM</h1>
+          <ul class="box-flow">
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta1.png" alt="배너 1" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
                 </div>
-                <ul class="menu1">
-                    <li>
-                        <a href="javascript:void(0);" class="category">BRAND</a>
-                        <ul class="submenu">
-                            <li><a href="./cardindex.html">브랜드 스토리</a></li>
-                            <li><a href="#">오더 서비스</a></li>
-                            <li><a href="#">아이덴티티</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="category">MENU</a>
-                        <ul class="submenu">
-                            <li><a href="#">케이크</a></li>
-                            <li><a href="#">타르트</a></li>
-                            <li><a href="#">디저트</a></li>
-                            <li><a href="#">음료</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="category">STORE</a>
-                        <ul class="submenu">
-                            <li><a href="#">매장 찾기</a></li>
-                            <li><a href="#">가맹점 개설</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="category">ORDER</a>
-                        <ul class="submenu">
-                            <li><a href="#">정기배송 주문</a></li>
-                            <li><a href="#">픽업 예약</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="category">COMMUNITY</a>
-                        <ul class="submenu">
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="#">EVENT</a></li>
-                            <li><a href="#">자주 하는 질문</a></li>
-                            <li><a href="#">고객센터</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="f_right">
-                    <li><a href="javascript:void(0);">로그인</a></li>
-                    <li><a href="javascript:void(0);">회원가입</a></li>
-                    <li><a href="javascript:void(0);">마이페이지</a></li>
-                    <li><a href="javascript:void(0);">찜 목록</a></li>
-                    <li><a href="https://www.instagram.com/pariscroissant_kr/"><span class="insta_icon"></span>INSTAGRAM</a></li>
-                </ul>
-            </div>
-        </footer>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta2.png" alt="배너 2" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta3.png" alt="배너 3" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta4.png" alt="배너 4" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta5.png" alt="배너 5" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta6.png" alt="배너 6" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta7.png" alt="배너 7" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" target="_blank">
+                <img src="images/main/insta8.png" alt="배너 8" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta9.png" alt="배너 8" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/pariscroissant_kr/"
+                target="_blank"
+              >
+                <img src="images/main/insta10.png" alt="배너 8" />
+                <div class="insta_info">
+                  <p class="insta_id">@OH_D_DAY</p>
+                  <div class="button">FOLLOW ></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 푸터 -->
+      <footer>
+        <div class="inner">
+          <div class="info">
+            <a href="javascript:void(0);" class="f_logo clearfix">
+              <img src="images/main/logo.png" alt="로고" />
+            </a>
+            <p class="f_txt">
+              고객센터: 1600-1234 &nbsp;&nbsp;&nbsp; 주소: 서울특별시 강남구
+              강남대로 396<br />
+              대표이사: 박지연 &nbsp;&nbsp;&nbsp; 사업자등록번호:
+              107-86-12345<br />
+              COPYRIGHTⓒ 2023 OHDDAY. ALL RIGHTS RESERVED
+            </p>
+            <ul class="f_link">
+              <li><a href="javascript:void(0);">개인정보처리방침</a></li>
+              <li><a href="javascript:void(0);">서비스이용약관</a></li>
+            </ul>
+          </div>
+          <ul class="menu1">
+            <li>
+              <a href="javascript:void(0);" class="category">BRAND</a>
+              <ul class="submenu">
+                <li><a href="#">브랜드 스토리</a></li>
+                <li><a href="#">오더 서비스</a></li>
+                <li><a href="#">아이덴티티</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="category">MENU</a>
+              <ul class="submenu">
+                <li><a href="#">케이크</a></li>
+                <li><a href="#">타르트</a></li>
+                <li><a href="#">디저트</a></li>
+                <li><a href="#">음료</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="category">STORE</a>
+              <ul class="submenu">
+                <li><a href="#">매장 찾기</a></li>
+                <li><a href="#">가맹점 개설</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="category">ORDER</a>
+              <ul class="submenu">
+                <li><a href="#">정기배송 주문</a></li>
+                <li><a href="#">픽업 예약</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="category">COMMUNITY</a>
+              <ul class="submenu">
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">자주 하는 질문</a></li>
+                <li><a href="#">고객센터</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="f_right">
+            <li><a href="javascript:void(0);">로그인</a></li>
+            <li><a href="javascript:void(0);">회원가입</a></li>
+            <li><a href="javascript:void(0);">마이페이지</a></li>
+            <li><a href="javascript:void(0);">찜 목록</a></li>
+            <li>
+              <a href="https://www.instagram.com/pariscroissant_kr/"
+                ><span class="insta_icon"></span>INSTAGRAM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
     <!-- 메뉴넘김 slick -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>
