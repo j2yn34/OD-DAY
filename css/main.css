@@ -351,6 +351,23 @@ input {
   object-fit: cover;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333 !important;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #fff;
+  opacity: 0.5;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 2.4rem !important;
+  font-weight: 600 !important;
+}
+
 body .swiper-horizontal > .swiper-pagination-bullets,
 body .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
